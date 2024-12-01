@@ -22,4 +22,6 @@ ROBLOX and all related binaries are proprietary trademarks and assets of ROBLOX 
 * Studio
 * Webserver (APIs, website)
 
+## The CORE model
+
 ## Getting Started
