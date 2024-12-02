@@ -9,7 +9,7 @@ A significant portion of this project is derived from the [Rōblox Freedom Distr
 [FAQ](Documentation/FAQ.md) | [Documentation](#how-do-i-read-the-documentation) | [Getting Started](##getting-started)
 
 ## Legal
-ROBLOX and all related binaries are proprietary trademarks and assets of ROBLOX Corporation. ROBLOX Corporation does not support, endorse, or have any affiliation with RobloxCore. RobloxCore operates independently of ROBLOX Corporation and its subsidiaries. All intellectual property and assets associated with ROBLOX Corporation remain the sole property of ROBLOX Corporation. RobloxCore and its components are not affiliated with or endorsed by ROBLOX Corporation in any manner.
+ROBLOX and all related binaries are proprietary trademarks and assets of ROBLOX Corporation. ROBLOX Corporation does not support, endorse, or have any affiliation with RobloxCore. Roblox Core operates independently of ROBLOX Corporation and its subsidiaries. All intellectual property and assets associated with ROBLOX Corporation remain the sole property of ROBLOX Corporation. Roblox Core and its components are not affiliated with or endorsed by ROBLOX Corporation in any manner.
 
 ## WARNING
 
