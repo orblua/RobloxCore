@@ -2,7 +2,7 @@
 
 Logo goes here
 
-Roblox Core is a free and open-source project designed to simulate a Roblox runtime environment and its infrastructure. 
+Roblox Core is a free and open-source project designed to simulate a Roblox runtime environment and its infrastructure.
 
 A significant portion of this project is derived from the [Rōblox Freedom Distribution (RFD)](https://github.com/Windows81/Roblox-Freedom-Distribution) by [VisuaIPlugin](https://github.com/Windows81) and is distributed under the same license.
 
@@ -23,5 +23,6 @@ ROBLOX and all related binaries are proprietary trademarks and assets of ROBLOX 
 * Webserver (APIs, website)
 
 ## The CORE model
+Roblox Core aims to preserve and emulate the behaviors and quirks of earlier Roblox versions
 
 ## Getting Started
