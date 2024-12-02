@@ -2,7 +2,7 @@
 
 Logo goes here
 
-Roblox Core is a free and open-source platform for simulating a fully functional Roblox environment using patched binaries. These include a client, host, studio and webserver. 
+Roblox Core is a free and open-source platform designed to simulate an authentic Roblox environment and its componenents.
 
 A significant portion of this project is derived from the [Rōblox Freedom Distribution (RFD)](https://github.com/Windows81/Roblox-Freedom-Distribution) by [VisuaIPlugin](https://github.com/Windows81) and is distributed under the same license.
 
