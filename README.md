@@ -15,7 +15,8 @@ ROBLOX and all related binaries are proprietary trademarks and assets of ROBLOX 
 
 ## Screenshot
 
-## Features
+## Features & Specifications
+Roblox Core is built upon the publicy available 2018M (v348) Roblox binaries
 
 * Client
 * Host (RCCservice)
