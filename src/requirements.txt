@@ -1,0 +1,10 @@
+typing_extensions
+pyOpenSSL
+trustme
+certifi
+urllib3
+pyzstd
+tomli
+py7zr
+lz4
+git+https://github.com/Windows81/Vendored-Tqdm
