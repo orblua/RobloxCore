@@ -7,4 +7,5 @@ pyzstd
 tomli
 py7zr
 lz4
+pyinstaller
 git+https://github.com/Windows81/Vendored-Tqdm
