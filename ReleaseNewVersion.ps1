@@ -1,10 +1,10 @@
-# Inherited from RFD, will update later
+# Inherited from RFD, this is a WIP
 
 $mode = (Read-Host "@
-1. Build EXE
-2. Build EXE and publish artefacts
-3. Build EXE and ZIP, then publish artefects
-")
+1. Build EXE")
+# 2. Build EXE and publish artefacts 
+# 3. Build EXE and ZIP, then publish artefects
+# ")
 
 $root = "$PSScriptRoot"
 $files = New-Object System.Collections.Generic.List[System.Object]
@@ -13,7 +13,7 @@ function RetrieveInput() {
 	$script:release_name = (Read-Host "Version title?")
 	# Packs Roblox executables into GitHub releases that can be downloaded.
 	$script:commit_name = $args[1] ?? (Get-Date -Format "yyyy-MM-ddTHHmmZ" `
-		(curl -I -s http://1.1.1.1 | grep "Date:" | cut -d " " -f 2-))
+		(Invoke-WebRequest -I -s http://1.1.1.1 | grep "Date:" | cut -d " " -f 2-)) # or curl
 }
 
 
@@ -25,19 +25,19 @@ function UpdateAndPush() {
 
 function CreateBinary() {
 	pyinstaller `
-		--name "RFD" `
-		--onefile "$root/Source/_main.py" `
-		-p "$root/Source/" `
+		--name "RobloxCore" `
+		--onefile "$root/src/_main.py" `
+		-p "$root/src/" `
 		--workpath "$root/PyInstallerWork" `
 		--distpath "$root" `
-		--icon "$root/Source/Icon.ico" `
+		--icon "$root/src/Icon.ico" `
 		--specpath "$root/PyInstallerWork/Spec" `
 		--hidden-import requests # Allows functions in config to use the `requests` library (1 MiB addition)
-	$files.Add("$root/RFD.exe")
+	$files.Add("$root/RobloxCore.exe")
 }
 
 function UpdateZippedReleaseVersion($labels) {
-	$const_file = "$root/Source/util/const.py"
+	$const_file = "$root/src/util/const.py"
 	$const_txt = (Get-Content $const_file) | ForEach-Object {
 		$r = $_
 		foreach ($label in $labels) {
@@ -49,8 +49,8 @@ function UpdateZippedReleaseVersion($labels) {
 }
 
 function CreateZippedDirs() {
-	foreach ($dir in (Get-ChildItem "$root/Roblox/*/*" -Directory)) {
-		$zip = "$root/Roblox/$($dir.Parent.Name).$($dir.Name).7z"
+	foreach ($dir in (Get-ChildItem "$root/roblox/*/*" -Directory)) {
+		$zip = "$root/roblox/$($dir.Parent.Name).$($dir.Name).7z"
 		Remove-Item $zip -Force -Confirm
 		if (-not (Test-Path $zip)) {
 			# The `-xr` switches are for excluding specific file names (https://documentation.help/7-Zip-18.0/exclude.htm).
