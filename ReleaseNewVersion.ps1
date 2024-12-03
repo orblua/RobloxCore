@@ -9,12 +9,12 @@ $mode = (Read-Host "@
 $root = "$PSScriptRoot"
 $files = New-Object System.Collections.Generic.List[System.Object]
 
-function RetrieveInput() {
-	$script:release_name = (Read-Host "Version title?")
+# function RetrieveInput() {
+#	$script:release_name = (Read-Host "Version title?")
 	# Packs Roblox executables into GitHub releases that can be downloaded.
-	$script:commit_name = $args[1] ?? (Get-Date -Format "yyyy-MM-ddTHHmmZ" `
-		(Invoke-WebRequest -I -s http://1.1.1.1 | grep "Date:" | cut -d " " -f 2-)) # or curl
-}
+#	$script:commit_name = $args[1] ?? (Get-Date -Format "yyyy-MM-ddTHHmmZ" `
+#		(Invoke-WebRequest -I -s http://1.1.1.1 | grep "Date:" | cut -d " " -f 2-)) # or curl
+# }
 
 
 function UpdateAndPush() {
