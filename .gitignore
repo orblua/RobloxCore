@@ -1,7 +1,5 @@
-!.vscode/
-!Guides/
-!Guides/**
-!Source/
+!src/
+!roblox/
 !Examples/
 !Examples/**
 Examples/**/AssetCache/
