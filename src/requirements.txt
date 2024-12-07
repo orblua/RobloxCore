@@ -1,4 +1,6 @@
 typing_extensions
+PyInstaller
+pillow
 pyOpenSSL
 trustme
 certifi
@@ -7,7 +9,4 @@ pyzstd
 tomli
 py7zr
 lz4
-pyinstaller
-egenix-mx-base
-pysqlite2
 git+https://github.com/Windows81/Vendored-Tqdm
